@@ -13,12 +13,12 @@
     <!-- Sticky Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo">BTA.</h1>
+            <h1 class="logo">BTA</h1>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -66,6 +66,7 @@
                 <!-- Programming -->
                 <div class="skill-category">
                     <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-box"><div class="progress-bars"><div class="progress-main" data-width="70%"></div></div></div>
                     <div class="skill-box"><p>C#</p><div class="progress-bar"><div class="progress" data-width="80%"></div></div></div>
                     <div class="skill-box"><p>HTML</p><div class="progress-bar"><div class="progress" data-width="80%"></div></div></div>
                     <div class="skill-box"><p>CSS</p><div class="progress-bar"><div class="progress" data-width="70%"></div></div></div>
@@ -75,6 +76,7 @@
                 <!-- Design & 3D -->
                 <div class="skill-category">
                     <h3><i class="fas fa-cube"></i> Design & Art</h3>
+                    <div class="skill-box"><div class="progress-bars"><div class="progress-main" data-width="60%"></div></div></div>
                     <div class="skill-box"><p>Krita</p><div class="progress-bar"><div class="progress" data-width="65%"></div></div></div>
                     <div class="skill-box"><p>Adobe Photoshop</p><div class="progress-bar"><div class="progress" data-width="65%"></div></div></div>
                     <div class="skill-box"><p>Blender 3D</p><div class="progress-bar"><div class="progress" data-width="60%"></div></div></div>
@@ -98,7 +100,7 @@
     <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container hidden">
-            <h2 class="section-title">My Projects</h2>
+            <h2 class="section-title">My Portfolio</h2>
             
             <!-- Filter Buttons -->
             <div class="filter-btns">
@@ -106,10 +108,36 @@
                 <button class="filter-btn" data-filter="poster">Posters</button>
                 <button class="filter-btn" data-filter="game">Games</button>
                 <button class="filter-btn" data-filter="audio">Audio/Assets</button>
+                <button class="filter-btn" data-filter="others">Others</button>
             </div>
 
             <!-- Project Gallery -->
             <div class="project-gallery">
+<!-- Others Link  -->
+                <div class="project-card active contact-card" data-category="others">
+                    <a href="https://drive.google.com/drive/folders/17BD99uqQrg2JeS3EvToEABLwIJtfL9i1?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Google Drive</h3>
+                        <p>Check it out!</p>
+                        <div class="project-info">
+                            <h4>Google Drive</h4>
+                            <p>All of my portfolio is here.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card active contact-card" data-category="others">
+                    <a href="https://csevs.csc.gov.ph/user/eligibility" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Civil Service</h3>
+                        <p>I Passed!</p>
+                        <div class="project-info">
+                            <h4>Alvarico, Bryan Teddy D.</h4>
+                            <p>March 06 1998.</p>
+                        </div>
+                    </a>
+                </div>
+
+<!-- Poster  -->
                 <div class="project-card" data-category="poster">
                     <img src="items/Midterm GED0085 - Alvarico.jpg" alt="Gender Equality Poster" onerror="this.src='https://via.placeholder.com/400x300'">
                     <div class="project-info">
@@ -124,6 +152,8 @@
                         <p>Infographic Design</p>
                     </div>
                 </div>
+
+<!--Game -->
                 <div class="project-card" data-category="game">
                     <img src="https://via.placeholder.com/400x300" alt="Game Project">
                     <div class="project-info">
@@ -131,6 +161,7 @@
                         <p>C# / Unity</p>
                     </div>
                 </div>
+                <!-- Audio -->
                 <div class="project-card" data-category="audio">
                     <img src="https://via.placeholder.com/400x300" alt="Audio Project">
                     <div class="project-info">
@@ -157,10 +188,12 @@
                     <h3>Facebook</h3>
                     <p>Follow my journey</p>
                 </a>
-                <a href="mailto:your.email@gmail.com" class="contact-card">
+
+
+                <a href="javascript:void(0)" class="copy-btn active contact-card" data-text="bdalvarico@gmail.com">
                     <i class="fas fa-envelope"></i>
                     <h3>Email</h3>
-                    <p>your.email@gmail.com</p>
+                    <p>bdalvarico@gmail.com</p>
                 </a>
             </div>
         </div>
