@@ -1,5 +1,5 @@
 // 1. Typing Effect for Hero Section
-const textArray = ["Gamer", "Game Developer", "3D Artist", "Audio Editor"];
+const textArray = ["a CSPE Eligible", "an Aspiring Game System Developer", "a Junior Visual Designer"];
 const typingDelay = 100;
 const erasingDelay = 50;
 const newTextDelay = 2000;
